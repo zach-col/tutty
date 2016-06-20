@@ -1,0 +1,13 @@
+<div class="container">
+
+	<div class="row">
+		<div ng-repeat="food in gusgueria">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<img  class="foodImg img-responsive" ng-src="{{ food.image }}"/>
+				<h1 class="foodName">{{ food.name }}</h1>
+				<h3 class="foodDescription">{{ food.description }}</h3>
+			</div>
+		</div>
+
+	</div>
+</div>

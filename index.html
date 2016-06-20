@@ -7,34 +7,21 @@
 		<!-- Bootstrap cdn -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Custom Css -->
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css"
+	>
+
+	<link rel="stylesheet" type="text/css" href="css/food.css">
     <!-- making bootstrap go to mobile first so user can not zoom-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-      <style>
-          /* Space out content a bit */
-      body {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        background: none;
-      }
-
-      .full {
-        background: url("https://pixabay.com/static/uploads/photo/2012/04/14/12/52/pattern-33815_960_720.png") no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-    </style>
 </head>
 <body ng-app="myApp" ng-controller="MainController" id="background">
+<div class="container">
+<h1 class="header"><span id="pink">The</span><span id="green">shop</span></h1>
+
       <!-- navbar -->
     <div class="navbar navbar-default navbar-fixed-top container" role="navigation">
         <div class="navbar-header">
@@ -48,120 +35,39 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/raspas">Raspas with fruit</a></li>
           </ul>
         </div><!-- .navbar-collapse -->
     </div>
-
-	<div class="container item">
-		<div class="jumbotron headerBackground">
-			<h1 id="header1">Tutty<span id="header2">Frutty</span></h1>
-		</div>
-
-		<h1 class="itemHeader">Raspas con Fruta - Snow Cones with Fruit</h1>
-        <div ng-repeat="item in fruitCups">
-          <div class=" col-md-4 col-sm-6">
-          	<img class="imgItem img-responsive center-block"ng-src="{{ item.image }}"/>
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-            <h3 class="description">{{ item.description }}</h3>
-          </div>
-        </div>
-    </div>
-
-    <div class="container item">
-		<h1 class="itemHeader">Raspas - Snow Cones</h1>
-        <div ng-repeat="item in snowCones">
-          <div class=" col-md-4 col-sm-6">
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-          </div>
-        </div>
-    </div>
-    <div class="container item">
-        <div ng-repeat="item in snowConesPrice">
-          <div class=" col-md-4 col-sm-4 col-xs-4">
-            <h1 class="size">{{ item.size}} {{ item.price | currency }}</h1>
-          </div>
-        </div>
-    </div>
-
-    <div class="container item">
-    <h1 class="itemHeader">fruta con nieve - fruit with ice cream </h1>
-        <div ng-repeat="item in fruitCream" >
-          <div class=" col-md-4 col-sm-6">
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-            <h3 class="description">{{ item.description }}</h3>
-          </div>
-        </div>
-    </div>
-
-    <div class="container item">
-    <h1 class="itemHeader">Tutty rayadas - tutty shredded fruits</h1>
-        <div ng-repeat="item in tuttyFruits" >
-          <div class=" col-md-4 col-sm-6">
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-            <h3 class="description">{{ item.description }}</h3>
-          </div>
-        </div>
-    </div>
-
-    <div class="container item">
-    <h1 class="itemHeader">Snacks </h1>
-        <div ng-repeat="item in snacks" >
-          <div class=" col-md-4 col-sm-6">
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-            <h3 class="price">{{ item.price | currency }}</h3>
-            <h3 class="description">{{ item.description }}</h3>
-          </div>
-        </div>
-    </div>
-
-    <div class="container item">
-    <h1 class="itemHeader">Gusgueria</h1>
-        <div ng-repeat="item in gusgueria" >
-          <div class=" col-md-4 col-sm-6">
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-            <h3 class="price">{{ item.price | currency }}</h3>
-            <h3 class="description">{{ item.description }}</h3>
-          </div>
-        </div>
-    </div>
-
-    <div class="container item">
-    <h1 class="itemHeader">Tortas </h1>
-        <div ng-repeat="item in tortas" >
-          <div class=" col-md-4 col-sm-6">
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-            <h3 class="price">{{ item.price | currency }}</h3>
-          </div>
-        </div>
-    </div>
-
-    <div class="container item">
-    <h1 class="itemHeader">Quesadillas </h1>
-        <div ng-repeat="item in quesadillas" >
-          <div class=" col-md-4 col-sm-6">
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-            <h3 class="price">{{ item.price | currency }}</h3>
-          </div>
-        </div>
-    </div>
-
-    <div class="container item">
-    <h1 class="itemHeader">Tostadas </h1>
-        <div ng-repeat="item in tostadas" >
-          <div class=" col-md-4 col-sm-6">
-            <h1 class="name">{{ item.name | uppercase }}</h1>
-            <h3 class="price">{{ item.price | currency }}</h3>
-          </div>
-        </div>
-    </div>
-
-	
+<!--
+	<nav>
+		<a href="#/">Home</a>
+		<a href="#/raspas">Raspas with fruit</a>
+		<a href="#/normalRaspas">Normal Raspas</a>
+		<a href="#/fruitCream">fruit cream</a>
+	</nav>
+	-->
+</div>
+<div ng-view>
+</div>
+	  <!-- angular route -->
+	<script src="js/angular-route.min.js"></script>
       <!-- Modules -->
     <script src="js/app.js"></script>
       <!-- Controllers -->
     <script src="js/controllers/MainController.js"></script>
+
+    <script src="js/controllers/RaspasController.js"></script>
+
+    <script src="js/controllers/NormalRaspasController.js"></script>
+
+    <script src="js/controllers/FruitCreamController.js"></script>
+
+    <script src="js/controllers/ShreddedFruitController.js"></script>
+
+    <script src="js/controllers/SnacksController.js"></script>
+
+    <script src="js/controllers/GusgueriaController.js"></script>
 </body>
 </html>
