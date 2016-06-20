@@ -40,17 +40,97 @@
           </ul>
         </div><!-- .navbar-collapse -->
     </div>
-<!--
-	<nav>
-		<a href="#/">Home</a>
-		<a href="#/raspas">Raspas with fruit</a>
-		<a href="#/normalRaspas">Normal Raspas</a>
-		<a href="#/fruitCream">fruit cream</a>
-	</nav>
-	-->
 </div>
+<!-- 
 <div ng-view>
-</div>
+</div> -->
+
+    <div class="container-fluid">
+        <div class="row">
+	    <div class="col-lg-3 col-md-3">
+		<div class="panel green">
+		    <div class="panel-body">
+                      <h1>Raspas con Fruta - Snow Cones with Fruit</h1>
+                        <div ng-repeat="raspa in raspas">
+		        	<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                        <img  class="foodImg img-responsive" ng-src="{{ raspa.image }}"/>
+                                        <h1 class="foodName">{{ raspa.name }}</h1>
+                                        <h3 class="foodDescription">{{ raspa.description }}</h3>
+                                </div>
+                         </div>
+
+                         <div ng-repeat="item in items">
+                                 <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                                         <img class="foodImg img-responsive" ng-src="{{ item.img}}"/>
+                                         <h1 class="foodName">{{ item.name }}</h1>
+                                 </div>
+                         </div>
+
+                <div ng-repeat="fruit in fruitCream">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <img  class="foodImg img-responsive" ng-src="{{ fruit.image }}"/>
+                                <h1 class="foodName">{{ fruit.name }}</h1>
+                                <h3 class="foodDescription">{{ fruit.description }}</h3>
+                        </div>
+                </div>
+
+                <div ng-repeat="fruit in shreddedFruit">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <img  class="foodImg img-responsive" ng-src="{{ fruit.image }}"/>
+                                <h1 class="foodName">{{ fruit.name }}</h1>
+                                <h3 class="foodDescription">{{ fruit.description }}</h3>
+                        </div>
+                </div>
+
+                <div ng-repeat="snack in snacks">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <img  class="foodImg img-responsive" ng-src="{{ snack.image }}"/>
+                                <h1 class="foodName">{{ snack.name }}</h1>
+                                <h3 class="foodDescription">{{ snack.description }}</h3>
+                        </div>
+                </div>
+
+                <div ng-repeat="food in gusgueria">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <img  class="foodImg img-responsive" ng-src="{{ food.image }}"/>
+                                <h1 class="foodName">{{ food.name }}</h1>
+                                <h3 class="foodDescription">{{ food.description }}</h3>
+                        </div>
+                </div>
+
+		    </div>
+		</div>
+	    </div>
+
+            <div class="col-lg-3 col-md-3">
+                <div class="panel pink">
+                    <div class="panel-body">
+                      info
+	            </div>
+        	</div>
+            </div>
+
+     
+            <div class="col-lg-3 col-md-3">
+                <div class="panel orange">
+                    <div class="panel-body">
+                        info
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3">
+                <div class="panel pink">
+                    <div class="panel-body">
+                        info
+                    </div>
+                </div>
+            </div>
+
+	</div>
+    </div>
+
 	  <!-- angular route -->
 	<script src="js/angular-route.min.js"></script>
       <!-- Modules -->
@@ -69,5 +149,7 @@
     <script src="js/controllers/SnacksController.js"></script>
 
     <script src="js/controllers/GusgueriaController.js"></script>
+
+
 </body>
 </html>

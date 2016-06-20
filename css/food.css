@@ -11,8 +11,8 @@
 
 
 .foodImg{
-	height: 200px;
-	width: 200px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
 	margin: 0 auto;
 	margin-top: 15px;
@@ -27,4 +27,26 @@
 .foodDescription{
 	color: white;
 	text-align: center;
+}
+
+.green {
+    background: #37752A;
+}
+
+.green h1 {
+    color: #A02452;
+    text-shadow: 2px 2px white;
+}
+
+.pink {
+    background: #A02452;
+}
+
+.orange {
+    background: #A9461F;
+}
+
+.panel {
+    border: 2px solid white;
+    border-radius: 0px;
 }

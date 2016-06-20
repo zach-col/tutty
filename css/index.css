@@ -10,6 +10,7 @@ body {
     background-color: #16818E;
 
 }
+/*
 .full {
   background: url("https://pixabay.com/static/uploads/photo/2012/04/14/12/52/pattern-33815_960_720.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -17,6 +18,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+*/
 
 .header{
 	background: orange;
