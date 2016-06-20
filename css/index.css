@@ -1,0 +1,78 @@
+/* Space out content a bit */
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+  color: black;
+}
+
+.modal-content {
+    background-color: #16818E;
+
+}
+.full {
+  background: url("home.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.headerBackground{
+	background-color: orange;
+}
+
+#header1{
+	color: pink;
+	text-align: center;
+	font-family: bold;
+}
+
+#header2{
+	color: green;
+	text-align: center;
+	font-family: bold;
+}
+
+.itemHeader{
+	background-color: yellow;
+	color: red;
+	text-align: center;
+	margin: auto;
+	border-radius: 4px;
+	text-transform: uppercase;
+	margin: 0 auto;
+	border: solid black 1px;
+}
+
+.name{
+	color: white;
+	text-align: center;
+}
+
+.description{
+	text-align: center;
+	overflow: auto;
+	height: 105px;
+}
+
+.price{
+	text-align: center;
+}
+.item{
+	background-color: #FF8E8E;
+}
+
+.size{
+	font-family: bold;
+	text-align: center;
+}
+
+.imgItem{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 15px;
+	border: solid white 2px;
+}
