@@ -30,7 +30,11 @@ app.config(function($routeProvider, $locationProvider) {
 		.when('/gusgueria', {
 			templateUrl: 'views/gusgueria.html',
 			controller: 'GusgueriaController'
-		});
+		})
+    .otherwise({
+      templateUrl: 'views/index.html',
+      controller: 'MainController'
+    });
 
     /*
      * Setup Pretty Routing with / vs #
