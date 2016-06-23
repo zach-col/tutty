@@ -1,6 +1,6 @@
 var app = angular.module('myApp',['ngRoute']);
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
 	//set up routes
 	$routeProvider
 		.when('/', {
@@ -30,5 +30,10 @@ app.config(function($routeProvider) {
 		.when('/gusgueria', {
 			templateUrl: 'views/gusgueria.html',
 			controller: 'GusgueriaController'
-		})
-})
+		});
+
+    /*
+     * Setup Pretty Routing with / vs #
+     */
+    $locationProvider.html5Mode(true);
+});

@@ -1,0 +1,417 @@
+app.controller('MainController', ['$scope', function($scope) { 
+/*  $scope.items = [
+    {
+      title: "Raspas con Fruta - Snow Cones with Fruit",
+      view: "raspas"
+    },
+    {
+      title: "Raspas - Snow Cones",
+      view: "normalRaspas"
+    },
+    {
+      title: "fruta con nieve - fruit with ice cream ",
+      view: "fruitCream"
+    },
+    {
+      title: "TUTTY RAYADAS - TUTTY SHREDDED FRUITS",
+      view: "shreddedFruit"
+    },
+    {
+      title: "snacks",
+      view: "snacks"
+    },
+    {
+      title: 'Gusgueria',
+      view: 'gusgueria'
+    }
+
+
+
+  ];
+*/
+
+  $scope.cardTitles = [
+    'Raspas Con Fruta - Snow Cones With Fruit',
+    'Raspas - Snow Cones',
+    'Fruta Con Crema - Fruit with creme',
+    'Shredded Fruit',
+    'Quesadillas',
+    'Tostadas',
+    'Snack\'s',
+    'Gusgueria',
+    'Tortas',
+    'Ensaladas',
+    'Licuados',
+    'Milk Shakes',
+    'Smoothies',
+    'Aguas Frescas',
+    'Kid\'s Menu',
+    'Jugos',
+  ];
+
+  $scope.raspas = [
+    {
+      name: 'Chamoyda',
+      description: 'Chamoy, Chile',
+    },
+    {
+      name: 'Mangonada',
+      description: 'Mango, Chamoy',
+    },
+    {
+      name: 'Pinada',
+      description: 'Pineapple, Chamoy, Chile',
+    },
+    {
+      name: 'Chamuco',
+      description: '(DIABLITO): Tamarindo, Cucumber, Chile, Chamoy',
+    },
+    {
+      name: 'Palomito',
+      description: '(ANGELITO): Lime Flavor, Cucumber, Chamoy',
+    },
+    {
+      name: 'Sandillada',
+      description: 'Watermelon, Chamoy, Chile',
+    }
+  ]; /* fruit Cups */
+
+  /*  snow cones */
+  $scope.items = [
+    {
+      name: 'Sandia',
+    },
+    {
+      name: 'Coconut'
+    },
+    {
+      name: 'Mango',
+    },
+    {
+      name: 'Tamarindo'
+    },
+    {
+      name: 'Chile'
+    },
+    {
+      name: 'Pina'
+    },
+    {
+      name: 'Fresa'
+    }
+  ];
+
+  $scope.fruitCream = [
+   {
+    name: 'Tutty Basket',
+    description: '2 scoops of icecream, cookies, & sprinkles'
+   },
+   {
+    name: 'Banana Split',
+    description: '3 scoops of ice cream with strawberries, pineapples, chocolate syrup & sprinkles'
+   },
+   {
+    name: 'Tutty sunday',
+    description: '2 scoops of icecream, banana, strawberries, chocolate syrup & sprinkles'
+   },
+   {
+    name: 'Tutty de todo',
+    description: 'Melon, coconut, cucumber, jicama, watermelon, pineapples, orange'
+   },
+   {
+    name: 'Tutty sweet',
+    description: 'Apple, strawberries, papaya, melon, grapes'
+   },
+   {
+    name: 'Tutty nieve',
+    description: '2 scoops of icecream with fruit and honey'
+   },
+   {
+    name: 'Escamocha',
+    description: 'Yogurt, honey, apple, strawberries, banana, grapes, melon, granola'
+   },
+   {
+    name: 'Bionico',
+    description: 'Strawberries, apple, grapes, melon, granola, crema de nuez'
+   },
+   {
+    name: 'Fresas con crema',
+    description: 'Strawberries and cream'
+   },
+   {
+    name: 'Fresas con platino',
+    description: 'Strawberries and banana'
+   }
+   ];
+
+   $scope.shreddedFruit = [
+    {
+      name: 'Tutty rayadas',
+      description: 'Jicama, cucumber, chile',
+    },
+    {
+      name: 'Rayada mix',
+      description: 'Carrots, cucumber, jicama, betabel, chile',
+    },
+    {
+      name: 'Cuery frutty',
+      description: 'Cueritos, cucumber, jicama, chile'
+    }
+]
+
+  $scope.snacks = [
+    {
+      name: 'Nachos',
+      description: 'Queso y Japapenos',
+      price: 4.25
+    },
+    {
+      name: 'Salchipulpos',
+      description: 'Mostaza, mayonesa, crema',
+      price: 2.99
+    },
+    {
+      name: 'Chicharron',
+      description: 'Cueritos, crema, repollo, frijoles, queso, aguacate, pico',
+      price: 5.99
+    },
+    {
+      name: 'Dorilocos',
+      description: 'Cueritos, crema, repollo, queso, elote, aguacate, pico',
+      price: 5.99
+    }
+  ]
+
+  $scope.gusgueria = [
+    {
+      name: 'Fruitos con queso',
+      description: 'Fritos, elote, crema, chile con queso',
+      price: 4.50
+    }
+]
+
+
+  $scope.tortas = [
+    {
+      name: 'Cubana',
+      price: 6.99
+    },
+    {
+      name: 'Hawaiana',
+      price: 6.99
+    },
+    {
+      name: 'Jamon',
+      price: 6.99
+    },
+    {
+      name: 'Chicken Fajita',
+      price: 6.99
+    },
+    {
+      name: 'Beef Fajita',
+      price: 6.99
+    },
+    {
+      name: 'Hot Dogs',
+      price: 6.99
+    }
+]
+
+
+  $scope.quesadillas = [
+    {
+      name: 'Chicken Fajita Quesadilla',
+      price: 6.99
+    },
+    {
+      name: 'Beef Fajita Quesadilla',
+      price: 6.99
+    },
+    {
+      name: 'Cheese Quesadilla',
+      price: 5.99
+    },
+    {
+      name: 'Sincronizadas',
+      price: 5.99
+    }
+]
+
+$scope.tostadas = [
+    {
+      name: 'Cueritos',
+      price: 3.50
+    },
+    {
+      name: 'Pierna',
+      price: 3.50
+    },
+    {
+      name: 'Ceviche',
+      price: 4.25
+    },
+    {
+      name: 'Camaron',
+      price: 4.25
+    },
+    {
+      name: 'Cocktel De Camaron',
+      price: 8.99
+    }
+]
+
+$scope.ensaladas = [
+    {
+      name: 'Atun',
+      price: 6.99
+    },
+    {
+      name: 'Camaron',
+      price: 6.99
+    },
+    {
+      name: 'Chicken Fajita',
+      price: 6.99
+    },
+    {
+      name: 'Beef Fajita',
+      price: 6.99
+    },
+    {
+      name: 'Avacado',
+      price: 5.99
+    }
+]
+
+$scope.licuados = [
+    {
+      name: 'Licuados',
+      description: 'Banana Papaya, Fresa a de tu Preferncia'
+    }
+]
+
+$scope.milkShakes = [
+    {
+      name: 'Chocolate'
+    },
+    {
+      name: 'Vainilla'
+    },
+    {
+      name: 'Fresa o le tu Preferencia'
+    }
+]
+
+$scope.smoothies = [
+	{
+	  name: 'Fruta at Gusto'
+	}
+]
+
+$scope.aguasFrescas = [
+    {
+      name: 'Tamarindo'
+    },
+    {
+      name: 'Melon'
+    },
+    {
+      name: 'Jamaica'
+    },
+    {
+      name: 'Orchata'
+    },
+    {
+      name: 'Melon'
+    },
+    {
+      name: 'Sandia'
+    },
+    {
+      name: 'Pina'
+    }
+]
+
+$scope.kidsMenu = [
+    {
+      name: 'Quesadilla'
+    },
+    {
+      name: 'Chicken Nuggets'
+    },
+    {
+      name: 'Grilled Cheese Sandwich',
+      description: 'With Fries'
+    }
+]
+
+$scope.jugos = [
+    {
+      name: 'Jugo Desinflamante'
+    },
+    {
+      name: 'Jugo Verde'
+    },
+    {
+      name: 'Para Las Manchas'
+    },
+    {
+      name: 'Anemia'
+    },
+    {
+      name: 'Cancer'
+    },
+    {
+      name: 'Desinflamar el Vientre'
+    },
+    {
+      name: 'Betabel'
+    },
+    {
+      name: 'zanahoria'
+    },
+    {
+      name: 'Rejuvenecr La Piel'
+    },
+    {
+      name: 'Leucemia'
+    },
+    {
+      name: 'Diabetes'
+    },
+    {
+      name: 'acne'
+    },
+    {
+      name: 'Colon'
+    },
+    {
+      name: 'Artritis'
+    },
+    {
+      name: 'Digestion'
+    },
+    {
+      name: 'Menopausia'
+    },
+    {
+      name: 'obesidad'
+    },
+    {
+      name: 'Colesterol'
+    },
+    {
+      name: 'Desintoxicador'
+    },
+    {
+      name: 'Higado'
+    },
+    {
+      name: 'Tiroides'
+    },
+    {
+      name: 'Quita Panza'
+    }
+]
+}]); /* end of main Controller */

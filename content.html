@@ -1,0 +1,183 @@
+    <div class="container-fluid vertical-center">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="panel green">
+            <div class="panel-body">
+              <h1 class="foodHeader">Raspas Con Fruta - Snow Cones With Fruit</h1>
+
+              <div ng-repeat="raspa in raspas">
+                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ raspa.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ raspa.description }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Raspas - Snow Cones </h1>
+
+              <div ng-repeat="item in items">
+                <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ item.name | uppercase }}</h1>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Fruta Con Crema - Fruit with creme </h1>
+
+
+              <div ng-repeat="fruit in fruitCream">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ fruit.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ fruit.description }}</h3>
+                </div>
+              </div>
+
+
+              <h1 class="foodHeader">Shredded Fruit </h1>
+
+              <div ng-repeat="fruit in shreddedFruit">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ fruit.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ fruit.description }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Quesadillas</h1>
+
+              <div ng-repeat="food in quesadillas">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.price | currency }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Tostadas</h1>
+
+              <div ng-repeat="food in tostadas">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.price | currency }}</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="panel pink">
+            <div class="panel-body">
+
+              <h1 class="foodHeader">Snack's</h1>
+
+              <div ng-repeat="snack in snacks">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ snack.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ snack.price | currency }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Gusgueria</h1>
+
+              <div ng-repeat="food in gusgueria">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.price | currency }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Tortas</h1>
+
+              <div ng-repeat="food in tortas">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.price | currency }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Ensaladas</h1>
+
+              <div ng-repeat="food in ensaladas">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.price | currency }}</h3>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+          <div class="panel orange">
+            <div class="panel-body">
+
+              <h1 class="foodHeader">Licuados</h1>
+
+              <div ng-repeat="food in licuados">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.description }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Milk Shakes</h1>
+
+              <div ng-repeat="food in milkShakes">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.description }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Smoothies</h1>
+
+              <div ng-repeat="food in smoothies">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.description }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Aguas Frescas</h1>
+
+              <div ng-repeat="food in aguasFrescas">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.description }}</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+          <div class="panel pink">
+            <div class="panel-body">
+
+              <h1 class="foodHeader">Kid's Menu</h1>
+
+              <div ng-repeat="food in kidsMenu">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.description }}</h3>
+                </div>
+              </div>
+
+              <h1 class="foodHeader">Jugos</h1>
+
+              <div ng-repeat="food in jugos">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="foodName">{{ food.name | uppercase }}</h1>
+                  <h3 class="foodDescription">{{ food.description }}</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
