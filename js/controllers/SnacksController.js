@@ -1,4 +1,4 @@
-app.controller('SnacksController', ['$scope', function($scope) { 
+app.controller('SnacksController', function($scope) { 
   $scope.snacks = [
     {
       image: 'https://pixabay.com/static/uploads/photo/2013/01/08/01/13/nachos-74202_960_720.jpg',
@@ -26,4 +26,4 @@ app.controller('SnacksController', ['$scope', function($scope) {
     }
   ]
   
-}]);
+});

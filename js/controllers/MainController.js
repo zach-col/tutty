@@ -48,19 +48,23 @@ app.controller('MainController', function($scope, $location) {
     },
     {
       'name': 'Quesadillas',
-      'img': ''
+      'img': '',
+      'link': 'quesadillas'
     },
     {
       'name': 'Tostadas',
-      'img': ''
+      'img': '',
+      'link': 'tostadas'
     },
     {
       'name': 'Snack\'s',
-      'img': ''
+      'img': '',
+      'link': 'snacks'
     },
     {
       'name': 'Gusgueria',
-      'img': ''
+      'img': '',
+      'link': 'gusgueria'
     },
     {
       'name': 'Tortas',

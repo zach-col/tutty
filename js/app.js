@@ -85,12 +85,12 @@ app.config(function($routeProvider, $locationProvider) {
     .when('/snacks',{
       templateUrl: 'views/snacks.html',
       controller: 'SnacksController'
-    });
+    })
 
     .when('/gusgueria',{
       templateUrl: 'views/gusgueria.html',
       controller: 'GusgueriaController',
-    };
+    })
 
     .otherwise({
       templateUrl: 'views/index.html',
