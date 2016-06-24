@@ -33,14 +33,17 @@ app.controller('MainController', function($scope, $location) {
     },
     { 
       'name': 'Raspas - Snow Cones',
+      'link': 'normalRaspas',
       'img': ''
     },
     {
       'name': 'Fruta Con Crema - Fruit with creme',
+      'link': 'fruitCream',
       'img': ''
     },
     {
       'name': 'Shredded Fruit',
+      'link': 'shreddedFruit',
       'img': ''
     },
     {
@@ -61,35 +64,43 @@ app.controller('MainController', function($scope, $location) {
     },
     {
       'name': 'Tortas',
-      'img': ''
+      'img': '',
+      'link': 'tortas'
     },
     {
       'name': 'Ensaladas',
-      'img': ''
+      'img': '',
+      'link': 'ensaladas'
     },
     { 
       'name': 'Licuados',
-      'img': ''
+      'img': '',
+      'link': 'licuados'
     },
     {
       'name': 'Milk Shakes',
-      'img': ''
+      'img': '',
+      'link': 'milkShakes'
     },
     {
       'name': 'Smoothies',
-      'img': ''
+      'img': '',
+      'link': 'smoothies'
     },
     {
       'name': 'Aguas Frescas',
-      'img': ''
+      'img': '',
+      'link': 'aguasFrescas'
     },
     {
       'name': 'Kid\'s Menu',
-      'img': ''
+      'img': '',
+      'link': 'kidsMenu'
     },
     {
       'name': 'Jugos',
-      'img': ''
+      'img': '',
+      'link': 'jugos'
     }
   ];
 

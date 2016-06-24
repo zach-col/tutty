@@ -5,7 +5,9 @@
            ng-mouseover="showImg($index); myStyle={'background': 'url(' + image + ')', 'background-size': 'cover', 'background-position': 'center', 'opacity': 0.6}" 
            ng-mouseleave="hideImg($index); myStyle={}" 
            ng-style="myStyle"
-           ng-click="goTo(card.link)"   
+           ng-click="goTo(card.link)"
+           ng-class-odd="'green'"
+           ng-class-even="'pink'"
         >
         <div class="panel-body">
           <h1 ng-class="{'hidden': hover[$index]}">{{card.name}}</h1>

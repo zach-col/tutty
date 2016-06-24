@@ -31,11 +31,71 @@ app.config(function($routeProvider, $locationProvider) {
 			templateUrl: 'views/gusgueria.html',
 			controller: 'GusgueriaController'
 		})
+
+    .when('/tortas', {
+      templateUrl: 'views/tortas.html',
+      controller: 'TortasController'
+    })
+
+    .when('/ensaladas', {
+      templateUrl: 'views/ensaladas.html',
+      controller: 'EnsaladasController'
+    })
+
+    .when('/licuados',{
+      templateUrl: 'views/licuados.html',
+      controller: 'LicuadosController'
+    })
+
+    .when('/milkShakes',{
+      templateUrl: 'views/milkShakes.html',
+      controller: 'MilkShakesController'
+    })
+
+    .when('/smoothies',{
+      templateUrl: 'views/smoothies.html',
+      controller: 'SmoothiesController'
+    })
+
+    .when('/aguasFrescas',{
+      templateUrl: 'views/aguasFrescas.html',
+      controller: 'AguasFrescasController'
+    })
+
+    .when('/kidsMenu',{
+      templateUrl: 'views/kidsMenu.html',
+      controller: 'KidsMenuController'
+    })
+
+    .when('/jugos',{
+      templateUrl: 'views/jugos.html',
+      controller: 'JugosController'
+    })
+
+    .when('/quesadillas',{
+      templateUrl: 'views/quesadillas',
+      controller: 'QuesadillasController.html',
+    })
+
+    .when('/tostadas',{
+      templateUrl: 'views/tostadas.html',
+      controller: 'TostadasController'
+    })
+
+    .when('/snacks',{
+      templateUrl: 'views/snacks.html',
+      controller: 'SnacksController'
+    });
+
+    .when('/gusgueria',{
+      templateUrl: 'views/gusgueria.html',
+      controller: 'GusgueriaController',
+    };
+
     .otherwise({
       templateUrl: 'views/index.html',
       controller: 'MainController'
     });
-
     /*
      * Setup Pretty Routing with / vs #
      */
