@@ -1,14 +1,20 @@
 <div class="container">
 
   <div class="row">
+
     <div ng-repeat="snack in kidsMenu">
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 foodHolder">
+
         <img  class="foodImg img-responsive" ng-src="{{ snack.image }}"/>
         <h1 class="foodName">{{ snack.name }}</h1>
         <h3 class="foodDescription">{{ snack.description }}</h3>
-        <h4 class="foodPrice">{{ snack.price}}</h3>
+        <h4 class="foodPrice">{{ snack.price | currency }}</h3>
+
       </div>
+
     </div>
 
   </div>
+
 </div>

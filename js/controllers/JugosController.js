@@ -1,70 +1,92 @@
 app.controller('JugosController', function($scope) {
 $scope.jugos = [
     {
-      name: 'Desinflamante'
+      name: 'Desinflamante',
+      price: 3.95
     },
     {
-      name: 'Jugo Verde'
+      name: 'Jugo Verde',
+      price: 3.95
     },
     {
-      name: 'Para Las Manchas'
+      name: 'Para Las Manchas',
+      price: 3.95
     },
     {
-      name: 'Anemia'
+      name: 'Anemia',
+      price: 3.95
     },
     {
-      name: 'Cancer'
+      name: 'Cancer',
+      price: 3.95
     },
     {
-      name: 'Desinflamar el Vientre'
+      name: 'Desinflamar el Vientre',
+      price: 3.95
     },
     {
-      name: 'Betabel'
+      name: 'Betabel',
+      price: 3.95
     },
     {
-      name: 'zanahoria'
+      name: 'zanahoria',
+      price: 3.95
     },
     {
-      name: 'Rejuvenecr La Piel'
+      name: 'Rejuvenecr La Piel',
+      price: 3.95
     },
     {
-      name: 'Leucemia'
+      name: 'Leucemia',
+      price: 3.95
     },
     {
-      name: 'Diabetes'
+      name: 'Diabetes',
+      price: 3.95
     },
     {
-      name: 'acne'
+      name: 'acne',
+      price: 3.95
     },
     {
-      name: 'Colon'
+      name: 'Colon',
+      price: 3.95
     },
     {
-      name: 'Artritis'
+      name: 'Artritis',
+      price: 3.95
     },
     {
-      name: 'Digestion'
+      name: 'Digestion',
+      price: 3.95
     },
     {
-      name: 'Menopausia'
+      name: 'Menopausia',
+      price: 3.95
     },
     {
-      name: 'obesidad'
+      name: 'obesidad',
+      price: 3.95
     },
     {
-      name: 'Colesterol'
+      name: 'Colesterol',
+      price: 3.95
     },
     {
-      name: 'Desintoxicador'
+      name: 'Desintoxicador',
+      price: 3.95
     },
     {
-      name: 'Higado'
+      name: 'Higado',
+      price: 3.95
     },
     {
-      name: 'Tiroides'
+      name: 'Tiroides',
+      price: 3.95
     },
     {
-      name: 'Quita Panza'
+      name: 'Quita Panza',
+      price: 3.95
     }
 ]
 

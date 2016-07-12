@@ -57,9 +57,22 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* making food item size */
+.foodItem{
+  margin: 0 auto;
+  list-style-type:none;
+  padding:0px;
+  text-align: center
+}
 
 
-
+.foodHolder{
+  border: 2px solid black;
+  height: 440px;
+  min-height: 500px;
+  max-height: 500px;
+  overflow-x: hidden;
+}
 /* css for pink background */
 .pink {
   background: #A02452;

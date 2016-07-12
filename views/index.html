@@ -2,7 +2,7 @@
   <div class="row margin-top">
     <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="card in cardTitles">
       <div class="panel panel-menu" 
-           ng-mouseover="showImg($index); myStyle={'background': 'url(' + image + ')', 'background-size': 'cover', 'background-position': 'center', 'opacity': 0.6}" 
+           ng-mouseover="showImg($index); myStyle={'background': 'url(' + card.img + ')', 'background-size': 'cover', 'background-position': 'center', 'opacity': 0.6}" 
            ng-mouseleave="hideImg($index); myStyle={}" 
            ng-style="myStyle"
            ng-click="goTo(card.link)"

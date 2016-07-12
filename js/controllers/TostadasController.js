@@ -1,6 +1,6 @@
 app.controller('TostadasController', function($scope) {
 
-$scope.tostadas = [
+ $scope.tostadas = [
     {
       name: 'Cueritos',
       price: 3.50
@@ -23,4 +23,4 @@ $scope.tostadas = [
     }
 ]
 
-}]
+});

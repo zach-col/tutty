@@ -33,3 +33,18 @@ body {
 #green{
 	color: green;
 }
+
+/* making navbar white */
+.navbar-default .navbar-brand {
+        color: white;
+}
+
+/* nabar background */
+.navbar-default {
+  background-color: #000000;
+  border-color: #ffffff;
+}
+  /* navbar links */
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}

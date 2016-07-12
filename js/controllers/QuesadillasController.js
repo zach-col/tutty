@@ -1,4 +1,4 @@
-app.controller('QuesadillasController.js', function ($scope){
+app.controller('QuesadillasController', function ($scope){
 
   $scope.quesadillas = [
     {
@@ -19,4 +19,4 @@ app.controller('QuesadillasController.js', function ($scope){
     }
 ]
 
-}];
+});

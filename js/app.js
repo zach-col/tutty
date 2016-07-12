@@ -73,8 +73,8 @@ app.config(function($routeProvider, $locationProvider) {
     })
 
     .when('/quesadillas',{
-      templateUrl: 'views/quesadillas',
-      controller: 'QuesadillasController.html',
+      templateUrl: 'views/quesadillas.html',
+      controller: 'QuesadillasController',
     })
 
     .when('/tostadas',{
@@ -89,8 +89,13 @@ app.config(function($routeProvider, $locationProvider) {
 
     .when('/gusgueria',{
       templateUrl: 'views/gusgueria.html',
-      controller: 'GusgueriaController',
+      controller: 'GusgueriaController'
     })
+
+    .when('/contact',{
+      templateUrl: 'views/contact.html',
+      controller: 'ContactController'
+      })
 
     .otherwise({
       templateUrl: 'views/index.html',

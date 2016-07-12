@@ -2,12 +2,40 @@
 
 	<div class="row">
 		<div ng-repeat="fruit in shreddedFruit">
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 foodHolder">
 				<img  class="foodImg img-responsive" ng-src="{{ fruit.image }}"/>
 				<h1 class="foodName">{{ fruit.name }}</h1>
 				<h3 class="foodDescription">{{ fruit.description }}</h3>
-			</div>
-		</div>
 
-	</div>
-</div>
+        <ul class="foodUl">
+          <div class="row">
+          <li class="foodItem col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-if="checkLeft($index)">
+            <input class="foo-input" id="foo_id_1_{{$index}}" name="foo_id_{{$index}}" type="radio" value="1" ng-click="setSize($index, 'small')">
+            <label for="foo_id_1">Sml</label>
+          </li>
+
+          <li class="foodItem col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-if="checkMiddle($index)">
+            <input class="foo-input" id="foo_id_2_{{$index}}" name="foo_id_{{$index}}" type="radio" value="2" ng-click="setSize($index, 'medium')">
+            <label for="foo_id_2">Med</label>
+          </li>
+
+          <li class="foodItem col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-if="checkRight($index)">
+            <input class="foo-input" id="foo_id_3_{{$index}}" name="foo_id_{{$index}}" type="radio" value="3" ng-click="setSize($index, 'large')">
+            <label for="foo_id_3">Lg</label>
+          </li>
+        </ul>
+
+        <h3 class="foodPrice">
+           {{ priceObj[$index] | currency }}
+        </h3>
+
+        </div> <!-- end of row -->
+
+			</div> <!-- end of col-->
+
+    </div> <!-- end of ng-repeat -->
+
+  </div> <!-- end of row end of row -->
+
+</div> <!-- end of container -->
