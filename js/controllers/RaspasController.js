@@ -1,4 +1,7 @@
-app.controller('RaspasController', function($scope) { 
+app.controller('RaspasController', function($scope, cart ) { 
+  $scope.cart = cart;
+
+  $scope.cart.name = "bob";
 
   var vm = $scope;
 

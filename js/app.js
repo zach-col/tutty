@@ -1,5 +1,6 @@
 var app = angular.module('myApp',['ngRoute']);
 
+
 app.config(function($routeProvider, $locationProvider) {
 	//set up routes
 	$routeProvider
@@ -95,6 +96,11 @@ app.config(function($routeProvider, $locationProvider) {
     .when('/contact',{
       templateUrl: 'views/contact.html',
       controller: 'ContactController'
+      })
+    
+    .when('/cart',{
+      templateUrl: 'views/cart.html',
+      controller: 'CartController'
       })
 
     .otherwise({

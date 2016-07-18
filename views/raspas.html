@@ -24,11 +24,13 @@
             <input class="foo-input" id="foo_id_3_{{$index}}" name="foo_id_{{$index}}" type="radio" value="3" ng-click="setSize($index, 'large')">
             <label for="foo_id_3">Lg</label>
           </li>
+
         </ul>
 
         <h3 class="foodPrice">
            {{ priceObj[$index] | currency }}
         </h3>
+        <button type="button" class="btn btn-primary center-block">Add to cart</button>
 
         </div> <!-- end of row -->
 
@@ -37,7 +39,4 @@
     </div> <!-- end of ng-repeat -->
   </div> <!-- end of row -->
 </div> <!-- end of container -->
-~                                                                                                                                                                                                                  
-~                                                                                                                                                                                                                  
-~                                                                                                                                                                                                                  
-~                                        
+

@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+      <h3>Qty</h3>
+    </div><!-- end of col -->
+
+    <div class="col-xs-4">
+      <h3>Item</h3>
+    </div><!-- end of col -->
+
+    <div class="col-xs-4">
+      <h3>Price</h3>
+    </div><!-- end of col -->
+
+  </div><!-- end of headers -->
+<hr>
+  <div class="row">
+    <div ng-repeat="item in cart">
+      <div class=" col-lg-12">
+        <button class="btn btn-danger">x</button>
+      </div>
+      <div class=" col-lg-4 col-md-3 col-sm-3 col-xs-1">
+      <p>Qty</p>
+      <select ng-model="val">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      
+      </div>
+
+      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-10">
+        <h1 class="cartFoodName"> {{ item.name }}</h1>
+      </div>
+
+      
+      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <h3 class="tableInfo"> Price: <span>{{val *  item.price | currency }}</span><br></h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</div><!-- end of container -->

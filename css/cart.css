@@ -1,0 +1,39 @@
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus, .btn-primary:active:hover {
+    color: black;
+    background-color: white;
+    border-color: black
+}
+
+
+.navbar {
+      margin-bottom: -1px;
+    }
+
+.footer{
+  color: white;
+}
+
+/* price header */
+
+.priceHeader{
+  font-size: 2.0em;
+}
+
+.tableInfo{
+  font-size: 1.6em;
+  color: #67e04d;
+  text-transform: capitalize;
+  text-align:center;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+
+.cartFoodName{
+  padding-left: 10px;;
+}
+
+
+.btn-danger{
+  float:right;
+}
